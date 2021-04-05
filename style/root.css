@@ -11,6 +11,13 @@ h1{
     padding-top:80px;
 }
 
+h1.title{
+    margin: 40px 0px 0px 0px;
+    font-size: 16px;
+    color: #AAAAAA;
+    text-transform: uppercase;
+}
+
 h2{
     font-size: 16px;
     margin: 0px;
@@ -20,6 +27,7 @@ h3{
     margin: 40px 0px 0px 0px;
     font-size: 12px;
     color: #AAAAAA;
+    text-transform: uppercase;
 }
 
 a{
