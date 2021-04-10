@@ -286,7 +286,7 @@ body > button#goTopButton {
 }
 
 @media(max-width:370px){
-    body > nav#sidebar{
+    body > nav#sidebar div.cabecalhoHeader {
         flex-direction: column;
     }
 
