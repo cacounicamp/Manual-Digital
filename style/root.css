@@ -228,11 +228,12 @@ body > button#goTopButton {
         overflow-y: hidden;
     }
 
-    body > nav#sidebar div.cabecalho{ 
+    body > nav#sidebar div.cabecalhoHeader{ 
+        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        
+        margin: 20px 0;
     }
 
     body > nav#sidebar div.cabecalho{ 
@@ -240,7 +241,7 @@ body > button#goTopButton {
         flex-direction: column;
         justify-content: center;
         align-items: right;
-        margin: 30px;
+        margin: 10px;
         text-align: right;
     }
 
@@ -255,6 +256,7 @@ body > button#goTopButton {
     body > main#main{
         position:static;
         width: 100%;
+        background-color: #FFF;
     }
 
     body > main#main > section div.metade{
