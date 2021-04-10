@@ -160,7 +160,8 @@ body > main#main > section  span.reference{
     display: block;
 }
 
-body > nav#sidebar > div{
+body > nav#sidebar div.cabecalho,
+body > nav#sidebar div.items{
     margin-left: 20px;
     max-width: 100%;
 }
@@ -170,7 +171,7 @@ nav#sidebar > img{
     max-height: 60px;
 }
 
-nav#sidebar > div.cabecalho{
+nav#sidebar div.cabecalho{
     margin-top: 20px;
 }
 
@@ -202,6 +203,10 @@ main#main p{
     font-weight: 100;
 }
 
+body > button#goTopButton {
+    display: none;
+}
+
 @media(max-width:750px){
     body{
         display: flex;
@@ -210,33 +215,40 @@ main#main p{
         width: 100%;
     }
 
-    nav > div.items{
-        display: none;
+    body > nav#sidebar > div.items{
+        margin: 0;
+        padding: 0 0 40px 20px;
+        background-color: #F8F8F8;
     }
 
-    body > nav#sidebar{
-        position:static;
-        flex-direction: row;
+    body > nav#sidebar {
+        position: static;
         width: 100%;
+        padding: 20px 0px 0px;
+        overflow-y: hidden;
+    }
+
+    body > nav#sidebar div.cabecalho{ 
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 20px 0px 20px 0px;
+        
     }
 
-    body > nav#sidebar > div.cabecalho{ 
+    body > nav#sidebar div.cabecalho{ 
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: right;
-        margin: 10px;
+        margin: 30px;
         text-align: right;
     }
 
-    body > nav#sidebar > div.cabecalho > h2{
+    body > nav#sidebar div.cabecalho > h2{
         margin:0px 5px 0px 5px;
     } 
     
-    body > nav#sidebar > div.cabecalho > div.icons{ 
+    body > nav#sidebar div.cabecalho > div.icons{ 
         display: none;
     }
 
@@ -255,6 +267,19 @@ main#main p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: #FFF;
+    }
+
+    body > button#goTopButton {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 10px;
+        border-color: transparent;
+        background-color: #AEE295;
+        border-radius: 50%;
+        color: #000;
+        font-weight: bolder;
     }
 }
 
@@ -263,7 +288,7 @@ main#main p{
         flex-direction: column;
     }
 
-    body > nav#sidebar > div.cabecalho{
+    body > nav#sidebar div.cabecalho{
         text-align: center;
      }
 }
