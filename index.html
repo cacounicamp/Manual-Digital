@@ -9,19 +9,39 @@
     <link href="style/root.css" rel="stylesheet">
     <link href="style/root.css" media="print" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        window.onscroll = () => {
+            const mybutton = document.getElementById("goTopButton");
+            const { y, width } = document.body.getBoundingClientRect();
+            
+            if (width > 750 || y > -50) {
+                mybutton.style.display = "none";
+            } else {
+                mybutton.style.display = "block";
+            }
+        }
+
+        const topFunction = () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </head>
 <body>
     <nav id="sidebar">
-        <img src="images/caco-rainbow.png"/>
-        <div class="cabecalho">
-            <h2>Manual de ingressante</h2>
-            <h2>Computação Unicamp</h2>
-            <h2>CACo 2021</h2>
-            <div class="icons">
-                <img src="images/mouse.png" alt="">
-                <img src="images/arroba.png" alt="">
-                <img src="images/arvore.png" alt="">
+        <div class="cabecalhoHeader">
+            <img src="images/caco-rainbow.png"/>
+            <div class="cabecalho">
+                <h2>Manual de ingressante</h2>
+                <h2>Computação Unicamp</h2>
+                <h2>CACo 2021</h2>
+                <div class="icons">
+                    <img src="images/mouse.png" alt="">
+                    <img src="images/arroba.png" alt="">
+                    <img src="images/arvore.png" alt="">
+                </div>
             </div>
         </div>
         <div class="items">
@@ -515,5 +535,8 @@ de demissão em massa. “Nenhuma família na rua! Se a Unicamp demitir, a gente
             <h1 class="title">Além da graduação</h1>
         </section>
     </main>
+    <button onclick="topFunction()" id="goTopButton" title="Volta ao topo">
+        <img src="images/up.png" />
+    </button>
 </body>
 </html>
