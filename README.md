@@ -86,7 +86,7 @@ Agora você precisa pelo terminal entrar no seu projeto e executar os seguintes 
 
 ```$ git commit -am "make it better"```
 
-```$ git push heroku master```
+```$ git push heroku main```
 
 
 ## Sucesso!
