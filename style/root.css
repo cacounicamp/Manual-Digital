@@ -33,6 +33,8 @@ h3{
 a{
     text-decoration: none;
     color: #121212;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 a:link{
