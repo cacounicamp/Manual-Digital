@@ -95,4 +95,7 @@ Sinta-se a vontade para sugerir melhorias e executá-las. Lembre-se de manter o 
 
 
 ## Script filter.py
+
+Na pasta ```utils``` foi criado o script filter.py para passarmos os textos do Manual de Ingressante para o formato html.
+
 TODO: Explicar como usar 
