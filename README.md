@@ -70,6 +70,9 @@ Temos que usar a tag ```<a>```, coloca no href o link em si, e entre as tags o t
 <a href="https://www.facebook.com/SAPPE-Unicamp-112906617163477" > Facebook SAPPE</a>
 ```
 
+## Como editar
+Para editar, você precisa clonar esse repo, e ter um conhecimento básico de git, html e css! Pergunta pra galera, alguém vai conseguir te ajudar!
+
 
 ## Deploy no Heroku
 Após commitar e deixar no repositório suas alterações, você deve subir elas as alterações no site, fazendo um deploy no Heroku. Não se assuste, é simples.
@@ -89,13 +92,39 @@ Agora você precisa pelo terminal entrar no seu projeto e executar os seguintes 
 ```$ git push heroku main```
 
 
-## Sucesso!
-Sinta-se a vontade para sugerir melhorias e executá-las. Lembre-se de manter o html e css simples, para que todos se sintam confortáveis para editar (=
-
-
-
 ## Script filter.py
 
 Na pasta ```utils``` foi criado o script filter.py para passarmos os textos do Manual de Ingressante para o formato html.
 
 TODO: Explicar como usar 
+
+## Coisas para fazer no Manual
+1. Imagens
+* Imagens em preto e branco: Todas as nossas imagens estão em preto e branco, poderíamos atualizar para imagens com cor
+
+2. CSS
+* Imagem das entidades: No momento as imagens de todas as entidades estão comentadas, porque o css padrão das imagens não ficou legal. Precisamos fazer um css legal pra elas.
+
+* class=box: Criamos uma class "box" que seriam para divs de destaque ou específicos da pandemia, mas ainda não foi feito um css pra ela.
+
+3. E se a gente for imprimir o manual novamente?
+
+Isso é bem provável que vai rolar, porque a pandemia vai ter um fim (esperamos..... o.o). Os textos da versão atual (2021) não estão em outro lugar senão esse repositório. O modo dos anos anteriores, de diagramação, não foi atualizado.
+
+Portanto, precisamos atualizar o modo de diagramação.
+
+Outra ideia, seria criar um css específico voltado para a impressão do manual. Isso é possível... personalizar o modo de impressão da página HTML, aí teríamos somente esse repositório com dois css, um que vamos ver no computador/celular; e outro que vamos ver no momento da impressão, dá pra checar isso clicando com o botão direito no site e clicando em "print". 
+
+Achei bem maneira essa ideia... mas dá um trabalho kkkk Pensando nisso, foi criado um css "print.css" para que possamos experimentar isso, e quem sabe em algum momento dê certo e a gente use oficialmente só esse repositório. 
+
+De qualquer forma, é legal pensar se isso é acessível para todos: o manual ser em HTML/CSS. É mais acessível ter as duas versões, diagramar e tals, ou só deixar esse? Coisas para nós pensarmos! (=
+
+4. Completar o README
+* Script utils/filter.py: Esse script converte nosso texto em HTML. Temos que adicionar como utilizá-lo e com exemplos.
+
+## Sucesso!
+Sinta-se a vontade para sugerir melhorias e executá-las. Lembre-se de manter o html e css simples, para que todos se sintam confortáveis para editar (=
+
+
+
+

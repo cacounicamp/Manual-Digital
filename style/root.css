@@ -217,6 +217,10 @@ body > button#goTopButton {
     display: none;
 }
 
+section a[href]{
+    color: #8C5CFF !important;
+}
+
 @media(max-width:750px){
     body{
         display: flex;
