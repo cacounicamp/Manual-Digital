@@ -91,6 +91,9 @@ Agora você precisa pelo terminal entrar no seu projeto e executar os seguintes 
 
 ```$ git push heroku main```
 
+### Quando alterar o CSS
+Tem que dar um restart no heroku
+
 
 ## Script filter.py
 
