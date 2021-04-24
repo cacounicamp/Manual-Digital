@@ -94,6 +94,7 @@ Agora você precisa pelo terminal entrar no seu projeto e executar os seguintes 
 ### Quando alterar o CSS
 Tem que dar um restart no heroku
 
+``` heroku restart ```
 
 ## Script filter.py
 
